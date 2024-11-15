@@ -1,0 +1,57 @@
+*{
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  outline: none;
+}
+body {
+  direction: rtl;
+  font-family: 'vazir' !important;
+}
+
+.app{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 100vh;
+}
+
+.control{
+  width: 40vw;
+}
+
+.box{
+  width: 45vw;
+  height: 50vh;
+  background: crimson;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+
+.box p{
+  background: rgb(139, 139, 139);
+  border: 2px solid black;
+  padding: 10px;
+  width: 50%;
+  text-align: center;
+  cursor: pointer;
+}
+.toast{
+  display: block!important;
+  width: 20%;
+  max-height: 15%!important;
+  font-size: 1.3rem;
+  font-weight: 700;
+  position: absolute;
+  bottom: 6rem;
+  left: -1rem;
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+}
+.toast.showToast{
+  opacity: 1;
+  left: 14rem;
+}
